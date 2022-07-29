@@ -29,11 +29,7 @@ h6 {
   min-height: 100vh;
 }
 
-.footer {
-  margin-top: auto;
-  background-color: #333;
-  padding: 20px;
-}
+
 /* container */
 .container {
   /* width: 100%; */
@@ -217,13 +213,25 @@ select {
   height: fit-content;
 }
 
-/* footer********** */
+.footer {
+  margin-top: auto;
+  
+
+  
+  width: 100%;
+  
+  padding: 0;
+}/* footer********** */
+
+
 .footer__title {
   color: #f1d60e;
   padding: 10px;
 }
 .footer__searchbox {
   text-align: end;
+  background-color: #333;
+  padding: 20px;
 }
 
 .footer__btn {
@@ -238,16 +246,18 @@ select {
 }
 
 /* contacts.html**************** */
+/*contacts**********  */
 .consult{
+
   display: grid;
   grid-template-columns: 1fr 1fr ;
 align-items: center;
 justify-items: center;
 
 }
-/* .contacts p,.contacts img {
-
-} */
+.contacts p {
+color:#333;
+}
 .contacts__title
 {
   text-align: center;
@@ -258,7 +268,27 @@ margin: 15px auto;
   text-align: center;
 }
 
+.consult__inner img{
+  border-radius: 20%;
+}
+/* price-list.html*************** */
+/* price****** */
+.price-list{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+ justify-items: center;
+}
+.price-list__inner{
+  display: block;
+}
+.price-list li{
+ list-style: none;
+}
 
+/* catalog************ */
+.catalog{
+  margin-bottom: 20px;
+}
 
 @media (min-width: 1200px) {
   .form__grid1200 {
