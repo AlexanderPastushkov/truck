@@ -175,6 +175,7 @@ select {
   width: 75%;
   background-color: rgb(236, 194, 139);
 }
+/* General/Adjacent sibling combinator */
 .radio,
 .checkbox {
   text-align: left;
