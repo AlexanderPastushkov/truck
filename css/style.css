@@ -275,7 +275,7 @@ margin: 15px auto;
 /* price****** */
 .price-list{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
  justify-items: center;
 }
 .price-list__inner{
@@ -332,6 +332,7 @@ margin: 15px auto;
   .form__grid1200 {
     display: block;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -350,6 +351,15 @@ margin: 15px auto;
   .form__grid1200 {
     display: block;
   }
+  .consult{
+    display: block;
+    text-align: center;
+  }
+  .price-list{
+    display: block;
+    text-align: center;
+  }
+  
 }
 @media (max-width: 480px) {
   .cat {
@@ -382,4 +392,13 @@ margin: 15px auto;
   .form__grid1200 {
     display: block;
   }
+  .consult{
+    display: block;
+    text-align: center;
+  }
+.price-list{
+  display: block;
+  text-align: center;
+}
+
 }
