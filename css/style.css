@@ -121,6 +121,11 @@ h6 {
 }
 .fa-truck {
   margin-right: 15px;
+  transition: 1s;
+
+}
+.fa-truck:hover {
+  transform: rotate(360deg);
 }
 /* form************* */
 /* form{
@@ -260,11 +265,22 @@ select {
 }
 .consult__inner {
   text-align: center;
+  overflow: hidden;
+  padding: 15px 0 50px;
 }
 
 .consult__inner img {
+  transition: 0.4s;
   border-radius: 20%;
+ 
 }
+.consult__inner img:hover {
+  transform: scale(1.2);
+/* transform: translateY(10px); */
+}
+
+
+
 /* price-list.html*************** */
 /* price****** */
 .price-list {
