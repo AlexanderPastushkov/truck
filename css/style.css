@@ -29,7 +29,6 @@ h6 {
   min-height: 100vh;
 }
 
-
 /* container */
 .container {
   /* width: 100%; */
@@ -176,10 +175,11 @@ select {
   width: 75%;
   background-color: rgb(236, 194, 139);
 }
-.radio ,.checkbox{
+.radio,
+.checkbox {
   text-align: left;
 }
- 
+
 .action {
   margin-top: 20px;
 }
@@ -215,14 +215,11 @@ select {
 
 .footer {
   margin-top: auto;
-  
 
-  
   width: 100%;
-  
-  padding: 0;
-}/* footer********** */
 
+  padding: 0;
+} /* footer********** */
 
 .footer__title {
   color: #f1d60e;
@@ -247,46 +244,47 @@ select {
 
 /* contacts.html**************** */
 /*contacts**********  */
-.consult{
-
+.consult {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
-align-items: center;
-justify-items: center;
-
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 .contacts p {
-color:#333;
+  color: #333;
 }
-.contacts__title
-{
+.contacts__title {
   text-align: center;
-margin: 15px auto;
-
+  margin: 15px auto;
 }
-.consult__inner{
+.consult__inner {
   text-align: center;
 }
 
-.consult__inner img{
+.consult__inner img {
   border-radius: 20%;
 }
 /* price-list.html*************** */
 /* price****** */
-.price-list{
+.price-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
- justify-items: center;
+  justify-items: center;
 }
-.price-list__inner{
+.price-list__inner {
   display: block;
+  text-align: center;
 }
-.price-list li{
- list-style: none;
+.price-list li {
+  list-style: none;
+  text-align: center;
+}
+.price-list__inner ul {
+  padding: 0;
 }
 
 /* catalog************ */
-.catalog{
+.catalog {
   margin-bottom: 20px;
 }
 
@@ -332,7 +330,12 @@ margin: 15px auto;
   .form__grid1200 {
     display: block;
   }
-
+  .price-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -351,15 +354,14 @@ margin: 15px auto;
   .form__grid1200 {
     display: block;
   }
-  .consult{
+  .consult {
     display: block;
     text-align: center;
   }
-  .price-list{
+  .price-list {
     display: block;
     text-align: center;
   }
-  
 }
 @media (max-width: 480px) {
   .cat {
@@ -392,13 +394,12 @@ margin: 15px auto;
   .form__grid1200 {
     display: block;
   }
-  .consult{
+  .consult {
     display: block;
     text-align: center;
   }
-.price-list{
-  display: block;
-  text-align: center;
-}
-
+  .price-list {
+    display: block;
+    text-align: center;
+  }
 }
