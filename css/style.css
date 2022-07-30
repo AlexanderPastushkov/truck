@@ -110,6 +110,7 @@ h6 {
 }
 .intro__title {
   text-align: center;
+  margin-bottom: 3%;
 }
 .intro__list {
   list-style: circle;
@@ -122,7 +123,6 @@ h6 {
 .fa-truck {
   margin-right: 15px;
   transition: 1s;
-
 }
 .fa-truck:hover {
   transform: rotate(360deg);
@@ -168,7 +168,19 @@ h6 {
 
 .form__title {
   padding: 15px;
+  animation: beat 2s infinite;
 }
+@keyframes beat {
+  0%{
+  transform:scale(1);}
+  50%{transform:scale(0.8);
+  }
+}
+/* .heart {
+  
+}
+
+   */
 .textarea {
   resize: none;
   width: 75%;
@@ -247,6 +259,20 @@ select {
 .search-txt {
   outline: none;
 }
+@keyframes translating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-130px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.footer__title {
+  animation: translating 6s linear infinite;
+}
 
 /* contacts.html**************** */
 /*contacts**********  */
@@ -271,15 +297,12 @@ select {
 
 .consult__inner img {
   transition: 0.4s;
-  border-radius: 20%;
- 
+  border-radius: 50%;
 }
 .consult__inner img:hover {
-  transform: scale(1.2);
-/* transform: translateY(10px); */
+  transform: scale(1.1);
+  /* transform: translateY(10px); */
 }
-
-
 
 /* price-list.html*************** */
 /* price****** */
@@ -302,8 +325,37 @@ select {
 
 /* catalog************ */
 .catalog {
+  margin: 20px 0;
+}
+.catalog__img{
+  width: 100%;
+}
+.img__block{
+  display: flex;
+  flex-direction: column;
+  
+}
+.catalog__inner>h2{
+  text-align: center;
   margin-bottom: 20px;
 }
+/* .heart {
+  animation: beat 1s infinite;
+}
+@keyframes beat {
+  0%{
+  transform:scale(1);}
+  50%{transform:scale(0.8);
+  }
+   */
+
+/* @keyframes rotating {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  p { animation: rotating 4s linear infinite; } */
+
+/* @media************* */
 
 @media (min-width: 1200px) {
   .form__grid1200 {
